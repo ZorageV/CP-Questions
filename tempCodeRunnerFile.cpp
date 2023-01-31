@@ -1,18 +1,21 @@
 #include<iostream>
-
 using namespace std;
+
+void value();
 
 int main()
 {
-            int n;
-            cin>>n;
-            for(int i=1; i<=5; i++)
-            {
-                for(int j=1; j<=i; j++)
-                {
-                    cout<<j;
-                }
-                cout<<endl;
-            }
+    int i=5;
+    while(i--)
+    {
+        value();
+    }
     return 0;
+}
+
+void value()
+{
+    static int n=1;
+    cout<<n<<endl;
+    n++;
 }
