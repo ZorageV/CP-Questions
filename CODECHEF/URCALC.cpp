@@ -1,4 +1,5 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 int main(){
@@ -17,8 +18,7 @@ int main(){
             cout<<a*b<<endl;
         }
         else if(c=='/'){
-            double div=a/b;
-            cout<<div<<endl;
+            cout<<fixed<<setprecision(8)<<a/b<<endl;
         }
     return 0;
 }
